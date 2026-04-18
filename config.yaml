@@ -1,0 +1,24 @@
+node:
+  id: "nexus-node-primary"
+  host: "0.0.0.0"
+  port: 8090
+  rpc_port: 8091
+  data_dir: "./data/nexusdb"
+
+chain:
+  name: "NexusLedger"
+  symbol: "NXL"
+  genesis_hash: "0x0000000000000000000000000000000000000000000000000000000000000000"
+  block_time: 3000
+  difficulty: 4
+
+consensus:
+  type: "hybrid"
+  pow_active: true
+  pos_active: true
+  min_stake: 10000
+
+security:
+  encryption: "AES-256"
+  signature_algorithm: "ECDSA"
+  enable_ssl: false
